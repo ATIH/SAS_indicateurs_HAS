@@ -1,6 +1,11 @@
-# Indicateurs ETE ORTHO et ISO ORTHO
+# Programmes et spécification des indicateurs de résultats en chirurgie orthopédique
 
-Programmes SAS et spécifications utilisés pour calculer les indicateurs ETE ORTHO et ISO ORTHO à partir du PMSI, lors de la campagne 2022 sur les données 2021.
+Les indicateurs de résultats en chirurgie orthopédique mesurent les évènements thrombo-emboliques (ETE) et les infections du site opératoire (ISO) après pose de prothèse totale de hanche (PTH) ou pose de prothèse totale de genou (PTG).
+
+Ce dépôt contient les programmes SAS et les spécifications utilisées pour calculer ces 4 indicateurs (ETE-PTH, ETE-PTG, ISO-PTH et ISO-PTG) à partir du PMSI MCO, lors de la campagne 2022 sur les données 2021.
+
+Les programmes ont été développés par le service DATA de l'Agence technique de l'information sur l'hospitalisation(ATIH), en déclinant les spécifications fournies par le service et Outils pour la Qualité et la Sécurité des Soins (EvOQSS) de la Haute Autorité de Santé (HAS).
+
 
 ## Liens utiles 
 Pages concernant ces indicateurs sur le site internet de la HAS 
@@ -10,7 +15,11 @@ Pages concernant ces indicateurs sur le site internet de la HAS
 - [IQSS 2022 - Infections du site opératoire après pose de prothèse totale de hanche (ISO-PTH)](https://www.has-sante.fr/jcms/p_3294825/fr/iqss-2021-infections-du-site-operatoire-apres-pose-de-prothese-totale-de-hanche-iso-pth)
 - [IQSS 2022 - Infections du site opératoire après pose de prothèse totale de genou (ISO-PTG)](https://www.has-sante.fr/jcms/p_3294826/fr/iqss-2021-infections-du-site-operatoire-apres-pose-de-prothese-totale-de-genou-iso-ptg)
 
-## Licence
-Ces programmes ont été développés par le service DATA de l'Agence technique de l'information sur l'hospitalisation(ATIH), en lien avec le service et Outils pour la Qualité et la Sécurité des Soins (EvOQSS) de la Haute Autorité de Santé (HAS).
+## Licence et citation
 
-Ils sont partagés sous [licence EUPL](LICENCE).
+Ce dépôt est partagé sous [licence EUPL](LICENCE).
+
+Si vous utilisez ces documents, merci de citer la source en incluant la référence suivante :
+
+> Programmes et spécification des indicateurs de résultats en chirurgie orthopédique, HAS et ATIH, 2022
+

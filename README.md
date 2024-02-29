@@ -19,6 +19,8 @@ Pages concernant ces indicateurs sur le site internet de la HAS
 
 Ce dépôt est partagé sous [licence EUPL](LICENCE).
 
+Il est disponible en ligne sur les espaces [GitHub de l'ATIH](https://github.com/ATIH/SAS_indicateurs_HAS/) et [GitLab de la HAS](https://gitlab.has-sante.fr/has-sante/public/indicateurs-resultats-chirurgie-orthopedique).
+
 Si vous utilisez ces documents et programmes, merci de citer la source en incluant la référence suivante :
 
 > Programmes et spécifications des indicateurs de résultats en chirurgie orthopédique, HAS et ATIH, version 2022

@@ -1,4 +1,6 @@
+
 # SAS_indicateurs_HAS
+
 
 # Programmes et spécifications des indicateurs de résultats en chirurgie orthopédique
 
@@ -7,6 +9,7 @@ Les indicateurs de résultats en chirurgie orthopédique mesurent les évènemen
 Ce dépôt contient les programmes SAS et les spécifications utilisées pour calculer ces 4 indicateurs (ETE-PTH, ETE-PTG, ISO-PTH et ISO-PTG) à partir du PMSI MCO, lors de la campagne 2022 sur les données 2021.
 
 Les programmes ont été développés par le service DATA de l'Agence technique de l'information sur l'hospitalisation(ATIH), en déclinant les spécifications fournies par le service Evaluation et Outils pour la Qualité et la Sécurité des Soins (EvOQSS) de la Haute Autorité de Santé (HAS).
+
 
 
 ## Précisions sur les utilisations possibles des programmes selon la source de données utilisée :
@@ -49,3 +52,4 @@ Si vous utilisez ces documents et programmes, merci de citer la source en inclua
 ## Contact
 
 L’adresse contact est : data@atih.sante.fr
+

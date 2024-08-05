@@ -964,7 +964,7 @@ data psi11_&aa._&loca.;
 	crit_multi_autre = rchh or rchg ;            
 	crit_modeentree  = modeentree in ("6", "7", "0") ;   
 
-	Crit_urgence=provenance="5";
+	Crit_urgence=provenance in ("5","U") %if &aa. >=23 %then %do; or passage_urg in ("U","V","5") ; %end; ;
 	Crit_uhcd= put(ident,$UHCD_1rum&aa._.)="1";
 	Crit_fuite=put(ident,$fuit&aa._.)="1";
 	crit_cvc = put(ident , $cvc&aa._. ) = "1" ;    
@@ -1216,58 +1216,28 @@ data a&aa;
 	set Psi12_&aa (keep = ident ano_date ano_retour anonyme duree annee mois &loca.);
 	atcd = put(cats(ident,&aa), $atcd&aa._.) = "1";
 	date_sortie = ano_date + duree;
-	if translate(ano_retour,"","0") ="";
+	if atcd =1 and translate(ano_retour,"","0") ="";
 run;
 
 data tot&aa;
 	set a&av a&aa;
 run;
 
-/* Sélection des patients ayant plusieurs séjours */
-proc freq data = tot&aa noprint;
-	table anonyme /out = y&aa;
-run;
+PROC SQL;
+Create table cal_anct_&aa. as
+select tot&aa..*, b.ano_date as deb_index, b.ident as id_index, 30>= b.ano_date-tot&aa..date_sortie>0 as delai_ok
+from tot&aa.
+left join (select * from psi12_&aa where &loca.) b on tot&aa..anonyme=b.anonyme ;
+QUIT;
 
-data y&aa;
-	set y&aa (where = (count >1));
-run;
 
-proc sort data = tot&aa;
-	by anonyme;
-run;
 
-data tott&aa;
-	merge tot&aa (in= a) y&aa (in=b drop = count  percent );
-	by anonyme;
-	if b;
-run;
-
-/* Calcul des délais entre les séjours d'un même patient*/
-proc sort data = tott&aa;
-	by anonyme ano_date;
-run;
-
-data tott&aa;
-	set tott&aa;
-	retain sortie;
-	by anonyme;
-	if first.anonyme then
-		sortie = date_sortie;
-		delai = ano_date - sortie;
-		crit_atcd = delai <=30 and delai >0;
-run;
-
-proc means data = tott&aa sum;
-	var crit_atcd;
-	where annee = "20&aa" and &loca.;
-run;
-
-/* Format pour les séjours index : un sejour index peut ne pas avoir d'acte de ptg-pth */
+/* Format pour les séjours index  */
 data s (keep = fmtname start label hlo );
 	length fmtname $20start $6 label $1 hlo $1;
-	set tott&aa(where = (crit_atcd = 1 and annee = "20&aa" ) );
+	set cal_anct_&aa. (where = (delai_ok = 1 ) );
 	fmtname = "$crit_atcd&aa._";
-	start = ident;
+	start = id_index;
 	label = "1";
 	output;
 
@@ -1553,9 +1523,9 @@ if round(nb_attendu,0.0001)<=0.0514 then U2sd=10.0021931;
 	
 	proc sql noprint;
 		select max(nb_attendu) into : Abscisse_max
-		from Resultsb_&aa ;
+		from Resultsb_&aa where nb_cible_tot >= 10;
 		select max(ratio_oe) into : Ordonnee_max
-		from Resultsb_&aa ;
+		from Resultsb_&aa  where nb_cible_tot >= 10;
 	quit;
 	%let O_max = %sysevalf(&Ordonnee_max.,ceil);
 	%let A_max = %sysevalf(&Abscisse_max.,ceil);

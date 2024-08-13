@@ -1057,7 +1057,8 @@ sum (CASE WHEN calculated EstExcl1=0 and Crit_Moins_18ans=0 THEN Crit_Dp_ISO ELS
 sum (CASE WHEN calculated EstExcl1=0 and Crit_Moins_18ans=0 THEN Crit_T846_7 ELSE 0 END) as Crit_T846_7,
 sum (CASE WHEN calculated EstExcl1=0 and Crit_Moins_18ans=0 THEN Crit_T840_1 ELSE 0 END) as Crit_T840_1,
 %if &loca.=pth %then %do ; sum (CASE WHEN calculated EstExcl1=0 and Crit_Moins_18ans=0 THEN Crit_fract ELSE 0 END) as Crit_fract,%end;
-sum (CASE WHEN calculated EstExcl1=0 and Crit_Moins_18ans=0 THEN Crit_urgence ELSE 0 END) as Crit_urgence,
+CASE WHEN f.provenance in ("5","U") %if &an. >=23 %then %do; or passage_urg in ("U","V","5")  %end; 
+	 or u.type_rum_1 in ("07A","07B","01A","01B","02A","02B","03A","03B","18") THEN 1 ELSE 0 END  as Crit_urgence,
 sum (CASE WHEN calculated EstExcl1=0 and Crit_Moins_18ans=0 THEN Crit_multi_pose ELSE 0 END) as Crit_multi_pose,
 sum (CASE WHEN calculated EstExcl1=0 and Crit_Moins_18ans=0 THEN Crit_multi_autre ELSE 0 END) as Crit_multi_autre,
 sum (CASE WHEN calculated EstExcl1=0 and Crit_Moins_18ans=0 THEN Crit_modeentree ELSE 0 END) as Crit_modeentree,

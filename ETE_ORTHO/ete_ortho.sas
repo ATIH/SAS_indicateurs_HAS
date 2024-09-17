@@ -886,7 +886,7 @@ run;
 data psi11_&aa._&loca.;
 	merge mco&aa.bd.fixe (in =a keep = finess seqmco anonyme ano_retour ano_date ident 
 			nbRum nbda nbActe age sexe modeentree provenance mois annee modesortie destination typ_sej
-			duree codegeo dp dr rumdudp supp_rea supp_si ghm2 raac) 
+			duree codegeo dp dr rumdudp supp_rea supp_si ghm2 raac passage_urg) 
 		mco&aa.bd.rgp (in=b keep = ident ghm&v );
 	by ident;
 	length cmd $ 2 racine $5;

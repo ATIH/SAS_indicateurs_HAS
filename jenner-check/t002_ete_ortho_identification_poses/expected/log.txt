@@ -1,0 +1,43 @@
+Jenner 0.1.0 (Unlicensed - limited to 100 observations)
+Get a license at https://jenneranalytics.com/license
+
+NOTE: Option OBS changed to 100.
+NOTE: Option MISSING changed to  .
+NOTE: PROC FORMAT library=WORK
+
+NOTE: FORMAT $acteh defined (11 ranges).
+NOTE: FORMAT $acteg defined (4 ranges).
+NOTE: DATA acte
+
+NOTE: Processing inline DATALINES (8 lines)
+
+NOTE: Read 8 rows from DATALINES.
+NOTE: Wrote acte (8 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA tt
+
+
+NOTE: Read 8 rows from acte.
+NOTE: Wrote tt (8 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC MEANS
+NOTE: Output dataset t has 7 observations and 5 variables.
+NOTE: PROC MEANS statement used.
+NOTE: PROC SQL 
+
+NOTE: Table ttt created.
+NOTE: PROC SQL statement used.
+NOTE: PROC PRINT data=ttt
+
+NOTE: PROC PRINT completed: 8 observations printed, 7 variables
+NOTE: PROC SQL 
+
+NOTE: Table multi created.
+NOTE: PROC SQL statement used.
+NOTE: PROC PRINT data=multi
+
+NOTE: PROC PRINT completed: 6 observations printed, 5 variables

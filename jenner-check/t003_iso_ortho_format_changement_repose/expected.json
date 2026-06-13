@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-06-13T18:43:49.146082+00:00",
+  "_captured_run_id": "r_019ec24b69fa7ae0a2c50b5e91da2983",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: FORMAT $Changement_repose defined (24 ranges).",
+    "NOTE: FORMAT ISO_ defined (2 ranges).",
+    "NOTE: Wrote classe (12 rows, 3 columns).",
+    "NOTE: PROC FREQ"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

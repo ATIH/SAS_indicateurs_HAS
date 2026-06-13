@@ -1,0 +1,44 @@
+Jenner 0.1.0 (Unlicensed - limited to 100 observations)
+Get a license at https://jenneranalytics.com/license
+
+NOTE: Option OBS changed to 100.
+NOTE: Option MISSING changed to  .
+NOTE: PROC FORMAT library=WORK
+
+NOTE: FORMAT $Changement_repose defined (24 ranges).
+NOTE: FORMAT ISO_ defined (2 ranges).
+NOTE: DATA actes
+
+NOTE: Processing inline DATALINES (12 lines)
+
+NOTE: Read 12 rows from DATALINES.
+NOTE: Wrote actes (12 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA classe
+
+
+NOTE: Read 12 rows from actes.
+NOTE: Wrote classe (12 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_type_chgt.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: PROC PRINT data=classe
+
+NOTE: PROC PRINT completed: 12 observations printed, 2 variables
+NOTE: DATA flags
+
+NOTE: Processing inline DATALINES (4 lines)
+
+NOTE: Read 4 rows from DATALINES.
+NOTE: Wrote flags (4 rows, 1 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_iso_obs.spec.json
+NOTE: PROC FREQ statement used.

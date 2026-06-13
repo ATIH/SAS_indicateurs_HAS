@@ -1,0 +1,8 @@
+{
+  "bundle": "t003_iso_ortho_format_changement_repose",
+  "source_file": "ISO_ORTHO/iso_ortho.sas",
+  "source_blob_sha": "790cc99e23cdd2bc17fb656f0ee08837393f3483",
+  "source_commit": "22acc354a53c2ba5f560e69ba432423db8b8bbdf",
+  "tier": "real_data",
+  "notes": "Format  (mapping multi-valeur en 7 categories) et format numerique ISO_ de la section 2_ Formats d'iso_ortho.sas. Le format  est applique via put(), le format ISO_ est attache a la variable dans l'etape DATA. Table d'actes d'exemple (12 lignes)."
+}

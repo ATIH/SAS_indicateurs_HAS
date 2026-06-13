@@ -1,0 +1,47 @@
+
+  Obs   DIAG  ETE_TVP  ETE_EP  CO_K  CO_CHF  CO_IR  CO_OBE
+-----  -----  -------  ------  ----  ------  -----  ------
+    1  I8010  1                   0       0      0       0
+    2  I8021  1                   0       0      0       0
+    3  I8081  2                   0       0      0       0
+    4  I269            1          0       0      0       0
+    5  C509                       1       0      0       0
+    6  C189                       1       0      0       0
+    7  I500                       0       1      0       0
+    8  N189                       0       0      1       0
+    9  E660                       0       0      0       1
+   10  J459                       0       0      0       0
+   11  Z867                       0       0      0       0
+
+                                                   The FREQ Procedure
+
+                                     Cumulative    Cumulative
+ete_tvp    Frequency    Percent     Frequency      Percent
+----------------------------------------------------------------
+                   8     72.73            8        72.73
+1                  2     18.18           10        90.91
+2                  1      9.09           11       100.00
+
+                                  Cumulative    Cumulative
+co_k    Frequency    Percent     Frequency      Percent
+-------------------------------------------------------------
+0               9     81.82            9        81.82
+1               2     18.18           11       100.00
+
+                                    Cumulative    Cumulative
+co_chf    Frequency    Percent     Frequency      Percent
+---------------------------------------------------------------
+0                10     90.91           10        90.91
+1                 1      9.09           11       100.00
+
+                                   Cumulative    Cumulative
+co_ir    Frequency    Percent     Frequency      Percent
+--------------------------------------------------------------
+0               10     90.91           10        90.91
+1                1      9.09           11       100.00
+
+                                    Cumulative    Cumulative
+co_obe    Frequency    Percent     Frequency      Percent
+---------------------------------------------------------------
+0                10     90.91           10        90.91
+1                 1      9.09           11       100.00

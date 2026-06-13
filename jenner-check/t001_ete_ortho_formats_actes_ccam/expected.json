@@ -1,0 +1,21 @@
+{
+  "_captured_at": "2026-06-13T18:43:49.146082+00:00",
+  "_captured_run_id": "r_019ec24b55f17e33a8ace73565928426",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: FORMAT $acteh defined (11 ranges).",
+    "NOTE: FORMAT $echo defined (4 ranges).",
+    "NOTE: Wrote classe (15 rows, 9 columns).",
+    "NOTE: PROC FREQ",
+    "NOTE: PROC PRINT data=classe"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

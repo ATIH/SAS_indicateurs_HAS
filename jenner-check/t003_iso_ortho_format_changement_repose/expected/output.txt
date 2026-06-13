@@ -1,0 +1,36 @@
+                                                   The FREQ Procedure
+
+                                       Cumulative    Cumulative
+type_chgt    Frequency    Percent     Frequency      Percent
+------------------------------------------------------------------
+                     1      8.33            1         8.33
+1                    2     16.67            3        25.00
+2                    2     16.67            5        41.67
+3                    1      8.33            6        50.00
+4                    1      8.33            7        58.33
+5                    2     16.67            9        75.00
+6                    1      8.33           10        83.33
+7                    2     16.67           12       100.00
+
+  Obs     ACTE  TYPE_CHGT
+-----  -------  ---------
+    1  NEKA001  1
+    2  NEKA022  1
+    3  NELA001  2
+    4  NELA002  2
+    5  NFKA003  3
+    6  NFLA002  4
+    7  NEGA001  5
+    8  NAGA001  5
+    9  NFGA002  6
+   10  NELA003  7
+   11  NEGA004  7
+   12  ZZZZ000
+
+                                                   The FREQ Procedure
+
+                                       Cumulative    Cumulative
+iso_obs      Frequency    Percent     Frequency      Percent
+------------------------------------------------------------------
+Pas d'ISO            2     50.00            2        50.00
+ISO                  2     50.00            4       100.00

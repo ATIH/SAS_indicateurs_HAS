@@ -1,0 +1,40 @@
+Jenner 0.1.0 (Unlicensed - limited to 100 observations)
+Get a license at https://jenneranalytics.com/license
+
+NOTE: Option OBS changed to 100.
+NOTE: Option MISSING changed to  .
+NOTE: PROC FORMAT library=WORK
+
+NOTE: FORMAT $tvp defined (8 ranges).
+NOTE: FORMAT $ep defined (2 ranges).
+NOTE: FORMAT $k defined (6 ranges).
+NOTE: FORMAT $chf defined (4 ranges).
+NOTE: FORMAT $ir defined (3 ranges).
+NOTE: FORMAT $obe defined (2 ranges).
+NOTE: DATA diag
+
+NOTE: Processing inline DATALINES (11 lines)
+
+NOTE: Read 11 rows from DATALINES.
+NOTE: Wrote diag (11 rows, 1 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA comorb
+
+
+NOTE: Read 11 rows from diag.
+NOTE: Wrote comorb (11 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=comorb
+
+NOTE: PROC PRINT completed: 11 observations printed, 7 variables
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_ete_tvp.spec.json
+NOTE: ODS plot written: freq_co_k.spec.json
+NOTE: ODS plot written: freq_co_chf.spec.json
+NOTE: ODS plot written: freq_co_ir.spec.json
+NOTE: ODS plot written: freq_co_obe.spec.json
+NOTE: PROC FREQ statement used.

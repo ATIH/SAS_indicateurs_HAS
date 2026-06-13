@@ -1,0 +1,8 @@
+{
+  "bundle": "t002_ete_ortho_identification_poses",
+  "source_file": "ETE_ORTHO/ete_ortho.sas",
+  "source_blob_sha": "6d0b97045064b5d2ad965fd999280d29a2cf22ba",
+  "source_commit": "22acc354a53c2ba5f560e69ba432423db8b8bbdf",
+  "tier": "real_data",
+  "notes": "Logique d'identification des poses/multi-poses de la section III.1 d'ete_ortho.sas : selection par formats CCAM, PROC MEANS CLASS/OUTPUT SUM par sejour, jointure PROC SQL. Table d'actes d'exemple (8 lignes) reproduisant mco&aa.bd.acte."
+}

@@ -1,0 +1,8 @@
+{
+  "bundle": "t004_ete_ortho_formats_comorbidites_cim10",
+  "source_file": "ETE_ORTHO/ete_ortho.sas",
+  "source_blob_sha": "6d0b97045064b5d2ad965fd999280d29a2cf22ba",
+  "source_commit": "22acc354a53c2ba5f560e69ba432423db8b8bbdf",
+  "tier": "real_data",
+  "notes": "Formats CIM-10 evenements ETE (, ) et facteurs d'ajustement ( cancer, , , ) de la section II.1 d'ete_ortho.sas, appliques via put() dans un DATA step sur une table de diagnostics d'exemple (11 codes) reproduisant mco&aa.bd.diag."
+}
